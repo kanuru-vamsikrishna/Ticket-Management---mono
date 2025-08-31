@@ -15,7 +15,7 @@ const app: Application = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 9999;
+const PORT = process.env.PORT || 5173;
 const MONGO_URI = process.env.MONGO_URI || "";
 
 mongoose.connect(MONGO_URI).then(() => {
